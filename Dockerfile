@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV JDK_VERSION "17.0.9"
+ENV JDK_VERSION "21.0.1"
 
 RUN wget https://github.com/SAP/SapMachine/releases/download/sapmachine-${JDK_VERSION}/sapmachine-jdk-${JDK_VERSION}_linux-x64-musl_bin.tar.gz
 
