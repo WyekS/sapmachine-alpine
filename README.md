@@ -11,14 +11,14 @@ However, this image provides a viable option for users who want to run Java appl
 # Instructions
 You can pull it from a public registry like Docker Hub. To do this, use the following command:
 ```bash
-docker pull wyeks/sapmachine-alpine
+docker pull wyeks/sapmachine-alpine:sapmachine-17.0.11
 ```
 
 This will download the wyeks/sapmachine-alpine image from Docker Hub.
 
 Once you have pulled the image, you can run it using the following command:
 ```bash
-docker run -it sapmachine-alpine
+docker run -it wyeks/sapmachine-alpine:sapmachine-17.0.11
 ```
 
 # Feedback
