@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV JDK_VERSION "21.0.3"
+ENV JDK_VERSION="21.0.4"
 
 RUN apk add --update ca-certificates unzip
 
