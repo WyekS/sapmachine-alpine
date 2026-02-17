@@ -8,17 +8,31 @@ The purpose of this image is to provide a lighter-weight option for running Java
 
 However, this image provides a viable option for users who want to run Java applications in lightweight Docker containers.
 
+## Versioning
+
+The Docker version will consider LTS version for SapMachine 17 and SapMachine 21, both LTS. The tagged versions are following the same convention than official SapMachine.
+
+
 # Instructions
 You can pull it from a public registry like Docker Hub. To do this, use the following command:
 ```bash
-docker pull wyeks/sapmachine-alpine:sapmachine-17.0.11
+docker pull wyeks/sapmachine-alpine:sapmachine-<version>
 ```
 
 This will download the wyeks/sapmachine-alpine image from Docker Hub.
 
 Once you have pulled the image, you can run it using the following command:
 ```bash
-docker run -it wyeks/sapmachine-alpine:sapmachine-17.0.11
+docker run -it wyeks/sapmachine-alpine:sapmachine-<version>
+```
+
+# Build and push a new image
+
+```bash
+docker buildx build \
+  -t wyeks/sapmachine-alpine:<version> \
+  -t wyeks/sapmachine-alpine:latest \
+  --push .
 ```
 
 # Feedback
